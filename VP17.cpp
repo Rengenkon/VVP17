@@ -56,6 +56,12 @@ public:
         }
         std::cout << "Среднее значение ячеек от " << k + 1 << " до " << l + 1 << " равно " << (double)s/(l-k+1) << "\n";
     }
+
+    void test() {
+        std::cout << "Задача 1\n";
+        print_arr();
+        med();
+    }
 };
 
 class z2
@@ -103,6 +109,12 @@ public:
         }
         std::cout << "Образует арифмитическую прогрессию с разностью прогрессии равной " << -1 * r << "\n";
     }
+
+    void test() {
+        std::cout << "Задача 2\n";
+        print_arr();
+        prog();
+    }
 };
 
 class z3
@@ -149,6 +161,12 @@ public:
             }
         }
         std::cout << "Минимальнай элемент находится под номером " << (p - arr) + 1 << " , значение равно " << *p << "\n";
+    }
+
+    void test() {
+        std::cout << "Задача 3\n";
+        print_arr();
+        min();
     }
 };
 
@@ -203,6 +221,12 @@ public:
             std::cout << "Последний локальный максимум находится под номером " << (p - arr) + 1 << " , значение равно " << *p << "\n";
         }
     }
+
+    void test() {
+        std::cout << "Задача 4\n";
+        print_arr();
+        max();
+    }
 };
 
 class z5
@@ -255,6 +279,12 @@ public:
             std::cout << "Первый элемент стоит на месте " << (p - arr) + 1 << "  -  " << *p << "\n" << "Второй элемент стоит на месте " << (l - arr) + 1 << "  -  " << *l << "\n";
         }
     }
+
+    void test() {
+        std::cout << "Задача 1\n";
+        print_arr();
+        dd();
+    }
 };
 
 
@@ -262,10 +292,17 @@ int main()
 {
     setlocale(LC_ALL, "rus");
 
-    z5 first;
-    first.print_arr();
-    first.dd();
+    z1 first;
+    z2 second;
+    z3 third;
+    z4 fourth;
+    z5 fifth;
 
-    std::cout << "Hello World!\n";
+    first.test();
+    second.test();
+    third.test();
+    fourth.test();
+    fifth.test();
+
     return 0;
 }
