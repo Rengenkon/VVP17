@@ -281,7 +281,7 @@ public:
     }
 
     void test() {
-        std::cout << "Задача 1\n";
+        std::cout << "Задача 5\n";
         print_arr();
         dd();
     }
